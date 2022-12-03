@@ -11,7 +11,7 @@ namespace Examen1
 		private List<Proposition> propositions;
 		public QCM() {
 		}
-		public QCM(List<Proposition> propositions)
+		public QCM(String qst, int id, List<Proposition> propositions) : base(qst, id)
 		{
 			this.propositions = propositions;
 		}
