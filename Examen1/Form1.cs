@@ -32,7 +32,7 @@ namespace Examen1
 		{
 			SqlConnection con = new SqlConnection("Data Source=DESKTOP-64KR7SG\\SQLEXPRESS;Initial Catalog=Examen;Integrated Security=True");
 			con.Open();
-			SqlCommand cmd = new SqlCommand("insert into EXM values('" + int.(textBox1.Text )+ "', '" +int.Parse( textBox2.Text )+ "', '" + textBox3.Text + "', '" + textBox4.Text+ "', '" + textBox5.Text + "')", con);
+			SqlCommand cmd = new SqlCommand("insert into EXM values('" + int.Parse(textBox1.Text )+ "', '" +int.Parse( textBox2.Text )+ "', '" + textBox3.Text + "', '" + textBox4.Text+ "', '" + textBox5.Text + "')", con);
 
 			MessageBox.Show(cmd.CommandText);
 			try
